@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Experimentos de Física - LEDs e Pêndulo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/scripts.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a href="#inicio" class="brand">
+            <img src="assets/logo-unifei-oficial.png" alt="UNIFEI" class="brand-logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#experimento-leds">Experimento LED</a></li>
+                <li><a href="#experimento-pendulo">Experimento Pêndulo</a></li>
+                <li><a href="#encontro-alunos">Encontro dos Alunos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Experimentos de Física: LEDs e Pêndulo Simples</h1>
+            <p>Relatório interativo com os principais resultados, imagens e materiais coletados durante os dois experimentos realizados em laboratório: caracterização óptica de LEDs semicondutores e análise do movimento harmônico simples de um pêndulo.</p>
+            
+        </div>
+    </section>
+
+    <main>
+        <section class="accordion" id="experimento-leds">
+            <button class="accordion-header">
+                <h2>Experimento 1 &mdash; Caracterização de LEDs</h2>
+                <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-content">
+            <p>O estudo analisou o comportamento elétrico e óptico de LEDs amarelo e verde, explorando a estrutura semicondutora P-N, a tensão de corte e a relação entre comprimento de onda e energia emitida. A coleta envolveu medições elétricas detalhadas, observações ópticas com rede de difração e cálculo da constante de Planck.</p>
+
+            <div class="metricas">
+                <div class="metrica">
+                    <strong>LED Amarelo</strong>
+                    <span>VF = 1,89 ± 0,08 V</span>
+                </div>
+                <div class="metrica">
+                    <strong>LED Verde</strong>
+                    <span>VF = 2,98 ± 0,02 V</span>
+                </div>
+                <div class="metrica">
+                    <strong>λ Amarelo</strong>
+                    <span>560 ± 14 nm</span>
+                </div>
+                <div class="metrica">
+                    <strong>λ Verde</strong>
+                    <span>520 ± 25 nm</span>
+                </div>
+            </div>
+
+            <h3>Fundamentos Teóricos</h3>
+            <p><strong>Semicondutor tipo N:</strong> dopado com átomos doadores, fornece elétrons extras como portadores majoritários.</p>
+            <p><strong>Semicondutor tipo P:</strong> dopado com átomos aceptores, gerando lacunas que atuam como cargas positivas móveis.</p>
+            <p>Em polarização reversa a região de depleção se alarga, impedindo o fluxo significativo de corrente e mantendo o LED apagado.</p>
+
+            <h3>Medições I × V</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">LED Amarelo</th>
+                        <th colspan="2">LED Verde</th>
+                    </tr>
+                    <tr>
+                        <th>Corrente I (mA)</th>
+                        <th>Tensão V (V)</th>
+                        <th>Corrente I (mA)</th>
+                        <th>Tensão V (V)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>0,1</td><td>0,60</td><td>1,0</td><td>2,81</td></tr>
+                    <tr><td>0,2</td><td>1,20</td><td>3,0</td><td>2,89</td></tr>
+                    <tr><td>0,3</td><td>1,75</td><td>5,0</td><td>2,92</td></tr>
+                    <tr><td>0,9</td><td>1,80</td><td>7,3</td><td>2,97</td></tr>
+                    <tr><td>2,0</td><td>1,83</td><td>10</td><td>3,02</td></tr>
+                    <tr><td>4,0</td><td>1,87</td><td>15</td><td>3,09</td></tr>
+                    <tr><td>10</td><td>1,91</td><td>22</td><td>3,16</td></tr>
+                    <tr><td>19</td><td>1,95</td><td>37</td><td>3,20</td></tr>
+                    <tr><td>36</td><td>1,99</td><td>31</td><td>3,23</td></tr>
+                    <tr><td>45</td><td>2,01</td><td>32,7</td><td>3,25</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Resultados Principais</h3>
+            <ul>
+                <li><strong>Linearização LED Amarelo:</strong> a = 354,2 ± 37,5 mA/V; b = −668,6 ± 73,8 mA.</li>
+                <li><strong>Linearização LED Verde:</strong> a = 121,3 ± 5,5 mA/V; b = −361,2 ± 17,7 mA.</li>
+                <li><strong>Constante de Planck estimada:</strong> h = (5,66 ± 0,28) × 10<sup>−34</sup> J·s (amarelo) e h = (8,28 ± 0,40) × 10<sup>−34</sup> J·s (verde).</li>
+            </ul>
+
+            <div class="callout">
+                <strong>Reflexão:</strong> A discrepância em relação ao valor de referência da constante de Planck está ligada a incertezas nas leituras de VF, posicionamento do máximo de difração e controle de temperatura. Melhorias incluem uso de fotodetector, calibração com laser padrão e repetição das medidas ópticas.
+            </div>
+
+            <div class="grid two">
+                <figure>
+                    <img src="assets/img1.jpeg" alt="Montagem experimental do LED amarelo com instrumentos de medição">
+                    <figcaption>Figura 1 &mdash; Montagem e instrumentos utilizados para o LED amarelo.</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img2.jpeg" alt="Curva característica tensão corrente do LED amarelo">
+                    <figcaption>Figura 2 &mdash; Curva I × V do LED amarelo.</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/img3.jpeg" alt="Curva característica tensão corrente do LED verde">
+                    <figcaption>Figura 3 &mdash; Curva I × V do LED verde.</figcaption>
+                </figure>
+            </div>
+            </div>
+        </section>
+
+        <section class="accordion" id="experimento-pendulo">
+            <button class="accordion-header">
+                <h2>Experimento 2 &mdash; Pêndulo Simples e MHS</h2>
+                <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-content">
+            <p>A segunda etapa investigou o movimento harmônico simples de um pêndulo de diferentes comprimentos. Foram registradas séries temporais manuais e com apoio do software Tracker®, permitindo comparar métodos de determinação do período e da aceleração da gravidade.</p>
+
+            <div class="metricas">
+                <div class="metrica">
+                    <strong>g (T × √l)</strong>
+                    <span>11,9 ± 0,9 m/s²</span>
+                </div>
+                <div class="metrica">
+                    <strong>g (Tracker)</strong>
+                    <span>9,77 ± 0,11 m/s²</span>
+                </div>
+                <div class="metrica">
+                    <strong>ω<sub>0</sub></strong>
+                    <span>4,21 ± 0,01 rad/s</span>
+                </div>
+            </div>
+
+            <h3>Conceitos-Chave</h3>
+            <p>O movimento harmônico simples ocorre quando a força restauradora é proporcional ao deslocamento e oposta a ele. Para o pêndulo, a aproximação sin θ ≈ θ é válida apenas para ângulos pequenos (&lt; 10°), garantindo que T = 2π √(l/g).</p>
+
+            <h3>Medições de Comprimento e Período</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>l (m)</th>
+                        <th>10T<sub>1</sub> (s)</th>
+                        <th>T<sub>1</sub> (s)</th>
+                        <th>10T<sub>2</sub> (s)</th>
+                        <th>T<sub>2</sub> (s)</th>
+                        <th>10T<sub>3</sub> (s)</th>
+                        <th>T<sub>3</sub> (s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1,0</td><td>20,00</td><td>2,00</td><td>20,11</td><td>2,01</td><td>20,10</td><td>2,01</td></tr>
+                    <tr><td>0,9</td><td>18,90</td><td>1,89</td><td>18,50</td><td>1,85</td><td>18,75</td><td>1,88</td></tr>
+                    <tr><td>0,6</td><td>15,40</td><td>1,54</td><td>15,32</td><td>1,53</td><td>15,39</td><td>1,54</td></tr>
+                    <tr><td>0,4</td><td>13,04</td><td>1,30</td><td>12,94</td><td>1,29</td><td>12,83</td><td>1,28</td></tr>
+                    <tr><td>0,2</td><td>9,72</td><td>0,97</td><td>10,25</td><td>1,03</td><td>9,67</td><td>0,97</td></tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>l (m)</th>
+                        <th>√l (√m)</th>
+                        <th>ȲT (s)</th>
+                        <th>∆T (s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1,0</td><td>1,00</td><td>2,01</td><td>0,01</td></tr>
+                    <tr><td>0,9</td><td>0,95</td><td>1,87</td><td>0,02</td></tr>
+                    <tr><td>0,6</td><td>0,77</td><td>1,54</td><td>0,01</td></tr>
+                    <tr><td>0,4</td><td>0,63</td><td>1,29</td><td>0,01</td></tr>
+                    <tr><td>0,2</td><td>0,45</td><td>0,99</td><td>0,03</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Ajuste com Tracker®</h3>
+            <p>A posição foi descrita pela função senoidal x(t) = A<sub>0</sub> + B · sin[ω · (t − c)]. O ajuste forneceu A<sub>0</sub> = 0,0588 ± 0,0005 m, B = −0,0596 ± 0,0007 m, c = −91,42 ± 0,30 rad e ω = 4,2144 ± 0,0138 rad/s.</p>
+
+            <div class="callout">
+                <strong>Comparativo dos métodos:</strong> A abordagem tradicional (cronometria manual) apresentou erro sistemático ligado à medição do comprimento efetivo e ao tempo de reação. O Tracker® reduziu essas fontes de erro ao fornecer ω com base em centenas de pontos, resultando em g = 9,77 ± 0,11 m/s², valor consistente com g<sub>ref</sub> = 9,78 m/s².
+            </div>
+
+            <figure>
+                <video controls src="assets/videoPendulo.mp4"></video>
+                <figcaption>Vídeo &mdash; Registro do movimento harmônico simples do pêndulo.</figcaption>
+            </figure>
+            </div>
+        </section>
+        <section class="content-section" id="encontro-alunos">
+            <h2>Encontro dos Alunos</h2>
+            <p>Após a coleta de dados, realizamos uma sessão colaborativa para revisar os resultados, alinhar interpretações e planejar melhorias. O encontro aproximou as equipes responsáveis por cada experimento e ajudou a consolidar o aprendizado.</p>
+            <div class="grid two">
+                <div class="callout">
+                    <strong>Pontos discutidos</strong>
+                    <ul>
+                        <li>Comparação entre as leituras manuais e a análise assistida pelo Tracker®.</li>
+                        <li>Propostas para reduzir incertezas nas medições de VF e posicionamento do máximo de difração.</li>
+                        <li>Organização de um cronograma para repetir etapas críticas com equipamentos mais precisos.</li>
+                    </ul>
+                </div>
+                <div class="callout">
+                    <strong>Próximos passos</strong>
+                    <ul>
+                        <li>Documentar o procedimento atualizado para futuras turmas.</li>
+                        <li>Produzir um guia rápido com lições aprendidas de cada experimento.</li>
+                        <li>Realizar nova rodada de medições com multímetros calibrados.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Material produzido para estudo e documentação dos experimentos.</p>
+    </footer>
+</body>
+</html>
